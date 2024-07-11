@@ -8,6 +8,7 @@ import (
 )
 
 func main() {
+	gin.SetMode(gin.ReleaseMode)
 	var server = gin.New()
 	// main route
 	server.GET("/", func(ctx *gin.Context) {
